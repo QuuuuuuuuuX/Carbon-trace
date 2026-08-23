@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>World Debug</title>
+  <style>body{margin:0;background:#222}#game{width:960px;height:540px}</style>
+</head>
+<body>
+  <div id="game"></div>
+  <script type="module">
+    import Phaser from 'phaser'
+    import WorldScene from './src/game/scenes/WorldScene.js'
+    localStorage.setItem('carbon_character_id', '1')
+    window.__game = new Phaser.Game({
+      type: Phaser.AUTO,
+      parent: 'game',
+      width: 960,
+      height: 540,
+      physics: { default: 'arcade', arcade: { gravity: { y: 900 } } },
+      scene: [WorldScene],
+      pixelArt: true,
+    })
+  </script>
+</body>
+</html>
