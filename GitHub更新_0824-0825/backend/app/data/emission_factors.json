@@ -1,0 +1,98 @@
+{
+  "version": "v1.0",
+  "updated_at": "2026-08-23",
+  "source": "IPCC 数据库 / 国家发改委《企业温室气体排放核算方法与报告指南》/ 生态环境部电网因子",
+  "factors": [
+    {
+      "category": "transport",
+      "activity": "打车",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.18,
+      "source_detail": "私家车（汽油）平均排放因子 0.18 kgCO₂/km"
+    },
+    {
+      "category": "transport",
+      "activity": "地铁",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.04,
+      "source_detail": "城市轨道交通人均排放因子约 0.04 kgCO₂/km"
+    },
+    {
+      "category": "transport",
+      "activity": "公交",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.06,
+      "source_detail": "公共汽车人均排放因子约 0.06 kgCO₂/km"
+    },
+    {
+      "category": "transport",
+      "activity": "步行",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.0,
+      "source_detail": "零排放"
+    },
+    {
+      "category": "transport",
+      "activity": "骑行",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.0,
+      "source_detail": "零排放"
+    },
+    {
+      "category": "transport",
+      "activity": "高铁",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.05,
+      "source_detail": "高速铁路人均排放因子约 0.05 kgCO₂/km"
+    },
+    {
+      "category": "transport",
+      "activity": "飞机",
+      "unit": "km",
+      "factor_kgco2_per_unit": 0.255,
+      "source_detail": "国内航班经济舱人均排放因子约 0.255 kgCO₂/km"
+    },
+    {
+      "category": "electricity",
+      "activity": "用电",
+      "unit": "度",
+      "factor_kgco2_per_unit": 0.58,
+      "source_detail": "中国电网平均排放因子 0.58 kgCO₂/度（生态环境部 2023）"
+    },
+    {
+      "category": "food",
+      "activity": "牛肉饭",
+      "unit": "份",
+      "factor_kgco2_per_unit": 3.5,
+      "source_detail": "牛肉每份约 200g，碳足迹约 3.5 kgCO₂"
+    },
+    {
+      "category": "food",
+      "activity": "猪肉饭",
+      "unit": "份",
+      "factor_kgco2_per_unit": 1.5,
+      "source_detail": "猪肉每份约 150g，碳足迹约 1.5 kgCO₂"
+    },
+    {
+      "category": "food",
+      "activity": "鸡肉饭",
+      "unit": "份",
+      "factor_kgco2_per_unit": 0.8,
+      "source_detail": "鸡肉每份约 150g，碳足迹约 0.8 kgCO₂"
+    },
+    {
+      "category": "food",
+      "activity": "素食",
+      "unit": "份",
+      "factor_kgco2_per_unit": 0.3,
+      "source_detail": "素食每份碳足迹约 0.3 kgCO₂"
+    },
+    {
+      "category": "consumption",
+      "activity": "外卖",
+      "unit": "单",
+      "factor_kgco2_per_unit": 0.2,
+      "source_detail": "外卖配送包装碳足迹约 0.2 kgCO₂/单"
+    }
+  ]
+}

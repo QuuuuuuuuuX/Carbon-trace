@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* ===== 碳衡物语设计系统 v0.4 =====
+ * 参考 SURF（XJTLU Virtual Campus）：西浦紫主色 + 移动优先 App 结构
+ * 品牌主色：brand（西浦紫 #534AB7）
+ * 环保语义：forest（绿，碳足迹/减排数据）
+ * 积分/能量：solar（琥珀）
+ * 中性：浅灰背景 + 白卡片
+ */
+@theme {
+  /* 深森林绿（品牌主色，参考 SURF surfplus --green #176341） */
+  --color-brand-50: #eef4f0;
+  --color-brand-100: #dfeee5;
+  --color-brand-200: #c0dccc;
+  --color-brand-300: #97c3a8;
+  --color-brand-400: #6ba584;
+  --color-brand-500: #3f8a63;
+  --color-brand-600: #176341;
+  --color-brand-700: #12502f;
+  --color-brand-800: #0f4c32;
+  --color-brand-900: #0a3523;
+  --color-brand-950: #061f14;
+
+  /* 环保绿（碳足迹/减排语义） */
+  --color-forest-50: #f0f7f1;
+  --color-forest-100: #dcefe0;
+  --color-forest-200: #b9dfc3;
+  --color-forest-300: #8cc79d;
+  --color-forest-400: #57a873;
+  --color-forest-500: #358c55;
+  --color-forest-600: #267043;
+  --color-forest-700: #1f5a37;
+  --color-forest-800: #1b472e;
+  --color-forest-900: #163a26;
+  --color-forest-950: #0b2015;
+
+  /* 琥珀（积分/能量） */
+  --color-solar-50: #fdf6e8;
+  --color-solar-100: #f9e9c4;
+  --color-solar-200: #f3d48c;
+  --color-solar-300: #eebc54;
+  --color-solar-400: #e9a82e;
+  --color-solar-500: #d98e1a;
+  --color-solar-600: #b96f13;
+  --color-solar-700: #955314;
+
+  /* 中性（参考 SURF） */
+  --color-surface: #f5f5f5;
+  --color-card: #ffffff;
+  --color-ink-900: #2c2c2a;
+  --color-ink-600: #6b6b66;
+  --color-ink-400: #888780;
+  --color-line: #e0e0dc;
+
+  /* 统一圆角 */
+  --radius-card: 16px;
+  --radius-soft: 12px;
+}
+
+:root {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-ink-900);
+}
+
+/* 卡片通用阴影（柔和，非纯黑） */
+.shadow-soft {
+  box-shadow: 0 4px 16px -6px rgb(44 44 42 / 0.10);
+}
+.shadow-brand {
+  box-shadow: 0 10px 30px -10px rgb(23 99 65 / 0.35);
+}
+
+/* 启动动画相关 */
+@keyframes splash-leaf {
+  0% { transform: scale(0.6) rotate(-8deg); opacity: 0; }
+  60% { transform: scale(1.08) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+@keyframes splash-rise {
+  0% { transform: translateY(12px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes splash-bar {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
